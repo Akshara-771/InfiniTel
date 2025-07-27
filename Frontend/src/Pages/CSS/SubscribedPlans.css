@@ -1,0 +1,90 @@
+.subscriptions-container {
+  padding: 1rem 0;
+}
+
+.subscription-search {
+  padding: 0.6rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.subscription-search:focus {
+  outline: none;
+  border-color: #4a6bff;
+  box-shadow: 0 0 0 2px rgba(74, 107, 255, 0.1);
+}
+
+.subscriptions-table-container {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.plan-name {
+  font-weight: 500;
+  color: #4a6bff;
+}
+
+.auto-renew {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.auto-renew.active {
+  background-color: rgba(40, 167, 69, 0.15);
+  color: #28a745;
+}
+
+.auto-renew.inactive {
+  background-color: rgba(108, 117, 125, 0.15);
+  color: #6c757d;
+}
+
+.subscription-dates {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Status pill */
+.subscription-status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.subscription-status.active {
+  background-color: rgba(40, 167, 69, 0.15);
+  color: #28a745;
+}
+
+.subscription-status.expired {
+  background-color: rgba(108, 117, 125, 0.15);
+  color: #6c757d;
+}
+
+.subscription-status.suspended {
+  background-color: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+}
+
+/* Days remaining indicator */
+.days-remaining {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .subscription-search {
+    width: 100%;
+  }
+}

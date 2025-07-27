@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #4a6bff;
+  --secondary-color: #f8f9fa;
+  --accent-color: #ff6b6b;
+  --text-color: #333;
+  --light-text: #777;
+  --border-color: #e0e0e0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7ff;
+  color: var(--text-color);
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
+}

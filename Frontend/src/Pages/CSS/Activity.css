@@ -1,0 +1,83 @@
+.activity-container {
+  padding: 1rem 0;
+}
+
+.activity-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.activity-filter-select {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activity-filter-select:focus {
+  outline: none;
+  border-color: #4a6bff;
+  box-shadow: 0 0 0 2px rgba(74, 107, 255, 0.1);
+}
+
+.activity-table-container {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.data-usage {
+  font-weight: 500;
+  color: #4a6bff;
+}
+
+.last-activity {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Status indicator dot */
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.status-indicator.active {
+  background-color: #28a745;
+}
+
+.status-indicator.inactive {
+  background-color: #dc3545;
+}
+
+/* Loading state */
+.activity-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #4a6bff;
+}
+
+/* No data message */
+.no-activity-data {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .activity-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

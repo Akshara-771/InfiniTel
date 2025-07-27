@@ -1,0 +1,103 @@
+.area-chart-container {
+  position: relative;
+  height: 280px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.area-chart-title {
+  color: #4a6bff;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Chart canvas styling */
+.area-chart-canvas {
+  animation: chart-fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes chart-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom tooltip styling */
+.area-chart-tooltip {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border-radius: 6px !important;
+  padding: 10px 14px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.area-chart-tooltip-header {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: white !important;
+  font-size: 0.9rem !important;
+}
+
+.area-chart-tooltip-body {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.85rem !important;
+}
+
+/* Custom axis styling */
+.area-chart-axis {
+  color: #777 !important;
+  font-size: 0.8rem !important;
+}
+
+.area-chart-grid-line {
+  border-color: rgba(0, 0, 0, 0.05) !important;
+  border-width: 1px !important;
+}
+
+/* Bar specific styling */
+.area-chart-bar {
+  border-radius: 4px 4px 0 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.area-chart-bar:hover {
+  opacity: 0.85 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .area-chart-container {
+    height: 240px;
+  }
+
+  .area-chart-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* No data state */
+.area-chart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.area-chart-empty-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
